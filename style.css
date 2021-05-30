@@ -1,0 +1,70 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+}
+
+#record,#capture{
+    position: fixed;
+    right:2rem;
+    height:4rem;
+    width:4rem;
+    border-radius: 50%;
+    border: none;
+}
+
+#record{
+    top:40vh;
+}
+#capture{
+    top:53vh;
+}
+.zoom{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 4vw;
+    top: 10vh;
+    right: 3vw;
+    padding: 2px;
+}
+#in,#out{
+    height: 50%;
+    width: 100%;
+}
+.filter-container{
+    /* display: flex;
+    flex-direction:column; */
+    position: fixed;
+    
+    left:2rem;
+    height: 25rem;
+    width: 5rem;
+    top:calc((100vh - 25rem) / 2);
+    background-color: red;
+}
+.filters{
+    border: 2px solid white;
+    width: 100%;
+    height: calc(25rem/6);
+    background: url(filter1.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+

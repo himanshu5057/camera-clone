@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:box-border
+        }
+        body{
+            margin:0;
+        }
+        .container{
+            margin: auto;
+            margin-top: 30vh;
+            height: 15rem;
+            width: 15rem;
+            background-color: yellow;
+            animation: moveRight 3s infinite ;
+            animation-fill-mode: forwards;
+        }
+        @keyframes moveRight{
+            0%{
+                transform: translateX(0);
+                transform: scale(1);
+                border-radius:0% ;
+            }
+            50%{
+                /* transform: translateX(400px); */
+                border-radius: 50%;
+                transform: scale(1.5);
+            }
+            100%{
+                transform: translateX(0);
+                border-radius: 0%;
+                transform: scale(1);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
